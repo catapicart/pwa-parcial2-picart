@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalina Picart - Cátedra PWA</title>
+     <!-- Estilo BOOTSTRAP -->
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+     <!-- Estilo propio -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="icons/logo.png" alt="Logo del sitio Play "></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <img src="icons/toggler-menu.png" alt="Boton para abrir menu"></button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="offcanvas-title"><p class="d-none" id="offcanvasNavbarLabel">Play Movies</p><img src="icons/logo.png" alt="Logo del sitio Play "></div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+    
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="pelis_x_mirar.html">Watch later</a></li>
+                <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="conexion"></div>
+      <main class="mt-8">
+        <div id="cargando"  class="m-3 d-flex align-items-center justify-content-center"></div>
+        <div id="listaMirar" class="row"><div id="noresultados"></div></div>
+      </main>
+
+  
+        
+    
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/lista.js"></script>
+    <script src="js/conexion.js"></script>
+    <script src="js/register_sw.js"></script>
+</body>
+</html>

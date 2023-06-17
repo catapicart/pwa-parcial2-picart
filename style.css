@@ -1,0 +1,321 @@
+nav.navbar{
+    background-color: rgb(26, 26, 26);
+}
+
+.navbar-brand, .offcanvas-title{
+    width: 25%;
+    margin: 6px;
+    margin-left: 20px;
+}
+
+.navbar-brand img, .offcanvas-title img{
+    width: 50%;
+}
+
+button img{
+    width: 25%;
+    margin: 6px;
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+button.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  
+}
+/* no funciona
+button.navbar-toggler:focus, button.navbar-toggler:checked button.navbar-toggler:hover{
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+} */
+
+div.offcanvas.offcanvas-start{
+    background-color: rgb(26, 26, 26);
+}
+
+a.nav-link{
+    color: white;
+}
+
+.offcanvas-header{
+    border-bottom: 1px rgba(255, 255, 255, 0.274) solid;
+}
+
+.mt-10{
+    margin-top: 40%;
+} 
+
+.mt-15{
+    margin-top: 70%;
+} 
+
+#resultados{
+    margin: 10px auto;
+}
+
+.card{
+    margin: 1rem auto;
+    background-color: rgb(66, 66, 66);
+}
+
+.card-img-top{
+    width: 100%;
+    padding: 18px 10px 10px 10px;
+}
+
+.card-body > *{
+    margin: 0;
+    display: inline-block;
+    color: white;
+}
+
+.card-body .card-title{
+    width: 74%;
+}
+.card-body .anio{
+    width: 24%;
+    align-items: center;
+    justify-content: center;
+}
+
+b{
+    color: red;
+}
+
+
+#carrusel{
+    z-index: 1;
+}
+
+
+
+#principal{
+    position: absolute;
+     z-index: 3;
+}
+
+#div-busqueda{
+    position: inherit;
+    z-index: 3;
+}
+
+#div-busqueda button{
+    width: 20%;
+    background: rgb(43,40,187);
+background: linear-gradient(137deg, rgba(43,40,187,1) 0%, rgba(117,19,210,1) 34%, rgba(237,50,212,1) 99%);
+outline: none;
+border: none;
+}
+
+#btnhome{
+    width: 60%;
+    background: rgb(43,40,187);
+background: linear-gradient(137deg, rgba(43,40,187,1) 0%, rgba(117,19,210,1) 34%, rgba(237,50,212,1) 99%);
+outline: none;
+border: none;
+color: white;
+}
+
+#div-busqueda button:hover{
+    background: rgb(25, 24, 109);
+background: linear-gradient(137deg, rgb(20, 19, 92) 0%, rgb(72, 11, 129) 34%, rgb(139, 29, 125) 99%);
+}
+
+#div-busqueda button img{
+    width: 100%;
+    margin: auto;
+}
+
+input#buscador{
+    background-color: rgba(255, 255, 255, 0.548);
+    border: none;
+}
+
+input#buscador:focus{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.822);
+    outline-offset: 0;
+}
+
+input::placeholder{
+    color: black;
+}
+
+
+.btn-movies{
+    width: 80%;
+    background-color: blueviolet;
+    color: white;
+    margin: 6px;
+}
+.btn-movies:hover{
+    background-color: rgb(68, 15, 117);
+    color: white;
+}
+
+#mostrarConexion{
+    height: 35px;
+    margin-top: 22%;
+}
+
+#carruselTitle{
+    margin: 40px 20px 20px 20px;
+}
+
+.card-footer button{
+    width: 100%;
+    border: 0px none;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+ .list-group-item{
+    color: white;
+    background-color: rgb(66, 66, 66);
+    padding: 14px;
+    border: var(--bs-list-group-border-width) solid rgb(59, 59, 59);
+}
+
+.mt-8{
+    margin-top: 30%;
+}
+
+.trailer{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 520px ) {
+    nav.navbar.fixed-top{
+        height: 10%;
+    }
+    .navbar-brand img{
+        width: 25%;
+    }
+    button img{
+        width: 10%
+    }
+    form.d-flex{
+        margin: 10%;
+    }
+    .mt-10{
+        margin-top: 30%;
+    }
+    .mt-15{
+        margin-top: 50%;
+    }
+    #div-busqueda button{
+        width: 15%;
+    }
+    div.carousel-item img{
+        display: none !important;
+    }
+    #carrusel{
+        height: 60%;
+        color: #fff;
+        background: linear-gradient(45deg,rgb(255, 0, 106),rgb(6, 6, 189),rgb(102, 0, 128),black);
+        background-size: 400% 400%;
+        position: relative;
+        animation: cambiar 10s ease-in-out infinite;
+    }
+    @keyframes cambiar{
+        0%{background-position: 0 50%;}
+        50%{background-position: 100% 50%;}
+        100%{background-position: 0 50%;}
+    }
+    .mt-8{
+        margin-top: 15%;
+    }
+    #noresultados{
+        padding: 15%;
+    }
+    .btn-movies{
+        width: 65%;
+    }
+    
+    #trailers{
+        display: flex;
+        flex-direction: column;
+    }
+    #mostrarConexion{
+        height: 25px;
+        margin-top: 14%;
+    }
+}
+
+@media screen and (min-width: 720px ) {
+    nav.navbar.fixed-top{
+        height: 15% !important;
+    }
+    .navbar-brand img{
+        width: 25%;
+    }
+    button img{
+        width: 10%;
+    }
+    .mt-8{
+        margin-top: 10%;
+    }
+    #noresultados{
+        padding: 0 25%;
+    }
+    .btn-movies{
+        width: 60%;
+        padding: 10px;
+    }
+    #mostrarConexion{
+        height: 25px;
+        margin-top: 12%;
+    }
+    
+}
+
+@media screen and (min-width: 1120px ) {
+    nav.navbar.fixed-top{
+        height: 12% !important;
+    }
+    .navbar-brand img{
+        width: 15%;
+    }
+    button img{
+        width: 8%;
+    }
+    .mt-10{
+        margin-top: 15%;
+    }
+    .mt-15{
+        margin-top: 18%;
+    }
+    #div-busqueda{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    form.d-flex{
+        width: 40%;
+    }
+    .mt-8{
+        margin-top: 10%;
+    }
+    #noresultados{
+        padding: 0 30%;
+    }
+    .btn-movies{
+        width: 20%;
+        padding: 15px;
+    }
+    #mostrarConexion{
+        height: 25px;
+        margin-top: 9%;
+    }
+}
