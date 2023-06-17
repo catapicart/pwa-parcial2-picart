@@ -16,7 +16,7 @@ if(localStorage.length != 0){
 
         //Si la key de localStorage incluye tt
         if(localStorage.key(m).includes('tt')){
-            fetch(`http://www.omdbapi.com/?apikey=${APIkey}&i=${localStorage.key(m)}`)
+            fetch(`https://www.omdbapi.com/?apikey=${APIkey}&i=${localStorage.key(m)}`)
 
         .then(respuesta=> {return respuesta.json();})
 
