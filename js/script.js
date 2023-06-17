@@ -14,7 +14,7 @@ btnBuscar.addEventListener('click', event => {
     <div class="spinner-border text-white" role="status">
     <span class="visually-hidden">Loading...</span>
     </div>`
-fetch(`http://www.omdbapi.com/?apikey=${APIkey}&s=${buscador.value}`) 
+fetch(`https://www.omdbapi.com/?apikey=${APIkey}&s=${buscador.value}`) 
 .then(respuesta =>{ //ARROW F()
     console.log(`Primer Then: response: ${respuesta}`, respuesta);
     console.log(`Status de la respuesta: ${respuesta.status}`);
